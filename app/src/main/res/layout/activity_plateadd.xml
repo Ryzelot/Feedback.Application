@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lightredtexture"
+    tools:context=".View.Plateadd">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:background="#AD1E1E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Platos de Comida"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/backplateadd"
+            android:layout_width="80dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="#AD1E1E"
+            android:text="Back"
+            app:icon="@drawable/iconback"
+            app:iconGravity="end"
+            app:iconSize="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logofeedback" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/txtplatename"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="Nombre del plato"
+                android:inputType=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/txtplateing1"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:ems="10"
+                android:hint="Ingrediente 1"
+                android:inputType=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtplatename" />
+
+            <EditText
+                android:id="@+id/txtplateing2"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:ems="10"
+                android:hint="Ingrediente 2"
+                android:inputType=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtplateing1" />
+
+            <EditText
+                android:id="@+id/txtplateing3"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:ems="10"
+                android:hint="Ingrediente 3"
+                android:inputType=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtplateing2" />
+
+            <EditText
+                android:id="@+id/txtplateing4"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:ems="10"
+                android:hint="Ingrediente 4"
+                android:inputType=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtplateing3" />
+
+            <EditText
+                android:id="@+id/txtplateing5"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:ems="10"
+                android:hint="Ingrediente 5"
+                android:inputType=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtplateing4" />
+
+            <EditText
+                android:id="@+id/txtplateing6"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:ems="10"
+                android:hint="Ingrediente 6"
+                android:inputType=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtplateing5" />
+
+            <EditText
+                android:id="@+id/txtplateing7"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:ems="10"
+                android:hint="Ingrediente 7"
+                android:inputType=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtplateing6" />
+
+            <EditText
+                android:id="@+id/txtplateing8"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:ems="10"
+                android:hint="Ingrediente 8"
+                android:inputType=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtplateing7" />
+
+            <EditText
+                android:id="@+id/txtplateing9"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:ems="10"
+                android:hint="Ingrediente 9"
+                android:inputType=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtplateing8" />
+
+
+            <EditText
+                android:id="@+id/txtplateing10"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:ems="10"
+                android:hint="Ingrediente 10"
+                android:inputType=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtplateing9" />
+
+            <EditText
+                android:id="@+id/txtplatecondiment"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:ems="10"
+                android:hint="Condimentos: a + a + a"
+                android:inputType=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtplateing10" />
+
+            <Button
+                android:id="@+id/btnplateaddtolist"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="#AD1E1E"
+                android:text="Agregar plato"
+                app:icon="@drawable/iconedit"
+                app:iconGravity="textEnd"
+                app:iconSize="22dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtplatecondiment" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

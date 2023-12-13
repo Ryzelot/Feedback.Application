@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FeedbackApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#AD1E1E</item>
+    </style>
+
+    <style name="Theme.FeedbackApplication" parent="Base.Theme.FeedbackApplication" />
+</resources>

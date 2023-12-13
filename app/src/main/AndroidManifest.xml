@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FeedbackApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".View.Feedbackupdate"
+            android:exported="false" />
+        <activity
+            android:name=".View.Feedbackadd"
+            android:exported="false" />
+        <activity
+            android:name=".View.MainFeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.Plateupdate"
+            android:exported="false" />
+        <activity
+            android:name=".View.Platecheckout"
+            android:exported="false" />
+        <activity
+            android:name=".View.Plateadd"
+            android:exported="false" />
+        <activity
+            android:name=".View.MainPlateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.Pantryupdate"
+            android:exported="false" />
+        <activity
+            android:name=".View.Pantrycheckout"
+            android:exported="false" />
+        <activity
+            android:name=".View.Pantryadd"
+            android:exported="false" />
+        <activity
+            android:name=".View.MainPantryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.Supercheckout"
+            android:exported="false" />
+        <activity
+            android:name=".View.Superupdate"
+            android:exported="false" />
+        <activity
+            android:name=".View.Superadd"
+            android:exported="false" />
+        <activity
+            android:name=".View.MainSupermarketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
