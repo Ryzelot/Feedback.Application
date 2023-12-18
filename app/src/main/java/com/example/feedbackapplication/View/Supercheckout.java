@@ -50,7 +50,7 @@ public class Supercheckout extends AppCompatActivity {
         checkoutProductList();
 
         //ArrayAdapter para MOSTRAR LA IN FORMACIÓN en la lista del ListView
-        ArrayAdapter adaptador = new ArrayAdapter(this, android.R.layout.simple_list_item_1, listaInfo);
+        ArrayAdapter adaptador = new ArrayAdapter<String>(getApplicationContext(),R.layout.text_style_layout, listaInfo);
         // Milistview.setAdapter(variable del ArrayAdapter)
         superlista.setAdapter(adaptador);
 

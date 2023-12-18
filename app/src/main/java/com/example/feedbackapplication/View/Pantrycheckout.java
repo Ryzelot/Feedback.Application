@@ -43,7 +43,7 @@ public class Pantrycheckout extends AppCompatActivity {
         checkoutPantryList();
 
         //ArrayAdapter para MOSTRAR LA IN FORMACIÓN en la lista del ListView
-        ArrayAdapter adaptador = new ArrayAdapter(this, android.R.layout.simple_list_item_1, listaInfoPantry);
+        ArrayAdapter adaptador = new ArrayAdapter<String>(getApplicationContext(), R.layout.text_style_layout, listaInfoPantry);
         pantrylista.setAdapter(adaptador);
 
         backtopantrycheck.setOnClickListener(new View.OnClickListener() {

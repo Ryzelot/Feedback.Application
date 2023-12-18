@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/lightredtexture"
+    android:background="@drawable/lightredtexturefixed"
     tools:context=".View.Supercheckout">
 
 
@@ -22,6 +22,7 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/asap_bold"
             android:text="Supermercado"
             android:textColor="@color/white"
             android:textSize="24sp"
@@ -92,6 +93,7 @@
                 app:layout_constraintVertical_bias="1.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -169,7 +169,7 @@ public class Platecheckout extends AppCompatActivity {
         earnList();
 
         //ArrayAdapter para MOSTRAR LA IN FORMACIÓN en la lista del ListView
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, listaInfoPlate);
+        ArrayAdapter adapter = new ArrayAdapter<String>(getApplicationContext(), R.layout.text_style_layout, listaInfoPlate);
         platelist.setAdapter(adapter);
     }
 
